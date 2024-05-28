@@ -1,0 +1,11 @@
+Model Information:
+* title:	Security Breach ATM
+* source:	https://sketchfab.com/3d-models/security-breach-atm-9d16c205b3ab42edab3b1a3bd5103e91
+* author:	UltraFNaFFan (https://sketchfab.com/UltraFNaFFan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Security Breach ATM" (https://sketchfab.com/3d-models/security-breach-atm-9d16c205b3ab42edab3b1a3bd5103e91) by UltraFNaFFan (https://sketchfab.com/UltraFNaFFan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

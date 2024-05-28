@@ -1,0 +1,823 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4883,
+      "max": [
+        0.14991000294685364,
+        0.48930999636650085,
+        0.15306007862091064
+      ],
+      "min": [
+        -0.15423999726772308,
+        0.19501999020576477,
+        -0.13940994441509247
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 58596,
+      "componentType": 5126,
+      "count": 4883,
+      "max": [
+        0.9999924898147583,
+        0.9999923706054688,
+        1.0
+      ],
+      "min": [
+        -0.9999923706054688,
+        -0.9999922513961792,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4883,
+      "max": [
+        4.912370204925537,
+        -0.005900000222027302
+      ],
+      "min": [
+        -1.9960700273513794,
+        -0.9959099888801575
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 11913,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 117192,
+      "componentType": 5126,
+      "count": 5678,
+      "max": [
+        0.1556600034236908,
+        0.36591002345085144,
+        -0.059529952704906464
+      ],
+      "min": [
+        -0.15941999852657318,
+        -0.47220996022224426,
+        -0.2060200423002243
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 185328,
+      "componentType": 5126,
+      "count": 5678,
+      "max": [
+        0.9999926090240479,
+        0.9995942115783691,
+        0.9999688267707825
+      ],
+      "min": [
+        -0.9999924302101135,
+        -0.9997121095657349,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 39064,
+      "componentType": 5126,
+      "count": 5678,
+      "max": [
+        0.9908499717712402,
+        0.9917899966239929
+      ],
+      "min": [
+        0.005439999978989363,
+        0.017720000818371773
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 47652,
+      "componentType": 5125,
+      "count": 18672,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 253464,
+      "componentType": 5126,
+      "count": 184,
+      "max": [
+        0.1465200036764145,
+        0.4891799986362457,
+        0.13630007207393646
+      ],
+      "min": [
+        -0.15084999799728394,
+        0.19501999020576477,
+        0.04192007705569267
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 255672,
+      "componentType": 5126,
+      "count": 184,
+      "max": [
+        0.9994913339614868,
+        0.9725497961044312,
+        0.280606210231781
+      ],
+      "min": [
+        -0.9997184872627258,
+        -0.9997744560241699,
+        0.019711507484316826
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 84488,
+      "componentType": 5126,
+      "count": 184,
+      "max": [
+        1.971750020980835,
+        -0.018540000542998314
+      ],
+      "min": [
+        1.0270899534225464,
+        -0.9877200126647949
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 122340,
+      "componentType": 5125,
+      "count": 552,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 257880,
+      "componentType": 5126,
+      "count": 1848,
+      "max": [
+        0.14597000181674957,
+        0.49799004197120667,
+        -0.08615007996559143
+      ],
+      "min": [
+        -0.15036000311374664,
+        -0.4859200119972229,
+        -0.12241991609334946
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 280056,
+      "componentType": 5126,
+      "count": 1848,
+      "max": [
+        0.9999921321868896,
+        0.9999924302101135,
+        1.0
+      ],
+      "min": [
+        -0.9999620318412781,
+        -0.9999925494194031,
+        -0.9999694228172302
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 85960,
+      "componentType": 5126,
+      "count": 1848,
+      "max": [
+        0.9924600124359131,
+        0.9975299835205078
+      ],
+      "min": [
+        -0.5037400126457214,
+        -0.3070499897003174
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 124548,
+      "componentType": 5125,
+      "count": 6288,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 302232,
+      "componentType": 5126,
+      "count": 84,
+      "max": [
+        0.13839000463485718,
+        0.4979700446128845,
+        -0.09513992071151733
+      ],
+      "min": [
+        -0.14271999895572662,
+        0.47999003529548645,
+        -0.11884991824626923
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 303240,
+      "componentType": 5126,
+      "count": 84,
+      "max": [
+        0.8577048182487488,
+        0.9999924302101135,
+        0.2278321236371994
+      ],
+      "min": [
+        -0.8620335459709167,
+        0.5052868723869324,
+        -0.06882451474666595
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 100744,
+      "componentType": 5126,
+      "count": 84,
+      "max": [
+        0.9539300203323364,
+        0.9548900127410889
+      ],
+      "min": [
+        0.05761000141501427,
+        0.1714800000190735
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 149700,
+      "componentType": 5125,
+      "count": 216,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 304248,
+      "componentType": 5126,
+      "count": 15846,
+      "max": [
+        0.18091000616550446,
+        0.4981500208377838,
+        0.2060200273990631
+      ],
+      "min": [
+        -0.18091000616550446,
+        -0.5,
+        -0.15915992856025696
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 494400,
+      "componentType": 5126,
+      "count": 15846,
+      "max": [
+        0.9999926686286926,
+        0.9999924302101135,
+        1.0
+      ],
+      "min": [
+        -0.9999925494194031,
+        -0.9999923706054688,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 101416,
+      "componentType": 5126,
+      "count": 15846,
+      "max": [
+        0.997189998626709,
+        0.9993299841880798
+      ],
+      "min": [
+        -1.5552799701690674,
+        -0.241239994764328
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 150564,
+      "componentType": 5125,
+      "count": 48507,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 684552,
+      "componentType": 5126,
+      "count": 9378,
+      "max": [
+        0.1520400047302246,
+        0.4379900395870209,
+        -0.0264399703592062
+      ],
+      "min": [
+        -0.15636999905109406,
+        -0.47106000781059265,
+        -0.15977004170417786
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 797088,
+      "componentType": 5126,
+      "count": 9378,
+      "max": [
+        0.999993085861206,
+        0.9999895095825195,
+        1.0
+      ],
+      "min": [
+        -0.9999620914459229,
+        -0.999992311000824,
+        -0.9999697804450989
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 228184,
+      "componentType": 5126,
+      "count": 9378,
+      "max": [
+        -0.002409999957308173,
+        -0.0008099999977275729
+      ],
+      "min": [
+        -0.9991700053215027,
+        -0.9957600235939026
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 344592,
+      "componentType": 5125,
+      "count": 31320,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Delta Force Black Hawk Down Remake (https://sketchfab.com/DF-BHD_Remake)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/un-truck-1-94b63aabf10e4a56b9623b2696267034",
+      "title": "UN Truck 1"
+    },
+    "generator": "Sketchfab-15.32.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 469872,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 303208,
+      "byteOffset": 469872,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 909624,
+      "byteOffset": 773080,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1682704,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_specular"
+  ],
+  "images": [
+    {
+      "uri": "textures/v034_car_oldtruck_wheel_baseColor.png"
+    },
+    {
+      "uri": "textures/v034_car_oldtruck_windows_baseColor.png"
+    },
+    {
+      "uri": "textures/v034_car_oldtruck_light_baseColor.png"
+    },
+    {
+      "uri": "textures/v034_car_oldtruck_body_baseColor.png"
+    },
+    {
+      "uri": "textures/v034_car_oldtruck_body_specularf0.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "v034_car_oldtruck_interior",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.010522587900897756,
+          0.010522587900897756,
+          0.010522587900897756,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9054258390996824
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "v034_car_oldtruck_wheel",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.17502276160658328,
+        "roughnessFactor": 0.3752659044523654
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "v034_car_oldtruck_windows",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          0.7341233389387012
+        ],
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.8921300238369083,
+        "roughnessFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 2
+      },
+      "name": "v034_car_oldtruck_light",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.5031904917797829,
+        "roughnessFactor": 0.4846551478434319
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "v034_car_oldtruck_light_alpha",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9054258390996824
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0,
+          "specularTexture": {
+            "index": 4
+          }
+        }
+      },
+      "name": "v034_car_oldtruck_body",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0.867821303083338,
+        "roughnessFactor": 0.52719540916218
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "v034_car_oldtruck_undercarriage",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.042333826065382815,
+          0.042333826065382815,
+          0.042333826065382815,
+          1.0
+        ],
+        "metallicFactor": 0.8009723210110196,
+        "roughnessFactor": 0.5454269497273578
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Ranchero truckedit_v034_car_oldtruck_interior_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ranchero truckedit_v034_car_oldtruck_wheel_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ranchero truckedit_v034_car_oldtruck_windows_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ranchero truckedit_v034_car_oldtruck_light_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ranchero truckedit_v034_car_oldtruck_light_alpha_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 17,
+            "POSITION": 16,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ranchero truckedit_v034_car_oldtruck_body_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 21,
+            "POSITION": 20,
+            "TEXCOORD_0": 22
+          },
+          "indices": 23,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ranchero truckedit_v034_car_oldtruck_undercarriage_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 25,
+            "POSITION": 24,
+            "TEXCOORD_0": 26
+          },
+          "indices": 27,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "UN Truck 1.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Ranchero truckedit"
+    },
+    {
+      "mesh": 0,
+      "name": "Ranchero truckedit_v034_car_oldtruck_interior_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Ranchero truckedit_v034_car_oldtruck_wheel_0"
+    },
+    {
+      "mesh": 2,
+      "name": "Ranchero truckedit_v034_car_oldtruck_windows_0"
+    },
+    {
+      "mesh": 3,
+      "name": "Ranchero truckedit_v034_car_oldtruck_light_0"
+    },
+    {
+      "mesh": 4,
+      "name": "Ranchero truckedit_v034_car_oldtruck_light_alpha_0"
+    },
+    {
+      "mesh": 5,
+      "name": "Ranchero truckedit_v034_car_oldtruck_body_0"
+    },
+    {
+      "mesh": 6,
+      "name": "Ranchero truckedit_v034_car_oldtruck_undercarriage_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	UN Truck 1
+* source:	https://sketchfab.com/3d-models/un-truck-1-94b63aabf10e4a56b9623b2696267034
+* author:	Delta Force Black Hawk Down Remake (https://sketchfab.com/DF-BHD_Remake)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "UN Truck 1" (https://sketchfab.com/3d-models/un-truck-1-94b63aabf10e4a56b9623b2696267034) by Delta Force Black Hawk Down Remake (https://sketchfab.com/DF-BHD_Remake) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

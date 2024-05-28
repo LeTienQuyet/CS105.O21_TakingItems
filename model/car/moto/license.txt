@@ -1,0 +1,11 @@
+Model Information:
+* title:	Moto Vespa
+* source:	https://sketchfab.com/3d-models/moto-vespa-f1c7cacdbc954b48a4062a4734617afb
+* author:	mohamed ouartassi (https://sketchfab.com/medouartassi134)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Moto Vespa" (https://sketchfab.com/3d-models/moto-vespa-f1c7cacdbc954b48a4062a4734617afb) by mohamed ouartassi (https://sketchfab.com/medouartassi134) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

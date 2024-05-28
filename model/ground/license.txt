@@ -1,0 +1,11 @@
+Model Information:
+* title:	Checkered Tile Floor
+* source:	https://sketchfab.com/3d-models/checkered-tile-floor-e6c5ea5c0c8f4c9ba27f07dcb9091ffd
+* author:	Andrew Jepson (https://sketchfab.com/ajepson)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Checkered Tile Floor" (https://sketchfab.com/3d-models/checkered-tile-floor-e6c5ea5c0c8f4c9ba27f07dcb9091ffd) by Andrew Jepson (https://sketchfab.com/ajepson) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
