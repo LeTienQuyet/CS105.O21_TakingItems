@@ -1,0 +1,71 @@
+#timeout-message {
+    position: fixed;
+    top: 250px;
+    left: 500px;
+    font-size: 50px;
+    color: red;
+    font-family: "Monaco", monospace;
+    padding: 10px;
+}
+
+#countdown-timer {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    font-size: 26px;
+    color: red;
+    font-family: "Monaco", monospace;
+}
+
+#scores {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 26px;
+    color: red;
+    font-family: "Monaco", monospace;
+}
+
+#items {
+    position: fixed;
+    top: 35px;
+    right: 20px;
+    font-size: 26px;
+    color: red;
+    font-family: "Monaco", monospace;
+}
+
+#velocity {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    font-size: 26px;
+    color: red;
+    font-family: "Monaco", monospace;
+}
+
+.center-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Monaco", monospace;
+    border-radius: 10px;
+}
