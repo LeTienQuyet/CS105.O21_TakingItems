@@ -12,7 +12,7 @@ const camera = new THREE.PerspectiveCamera(
     1000
 );
 
-camera.position.set(0.15205405510167178, 25.848528674394366, -22.934411290758057); 	 
+camera.position.set(1.0009840837239776, 16.780185650706233, -30.192386071860483); 	 
 
 const renderer = new THREE.WebGLRenderer({
     alpha: true,
@@ -334,7 +334,7 @@ async function loadBikeModel() {
 loadBikeModel();
 // ----------------------------BIKE----------------------------
 
-// ----------------------------BIKE----------------------------
+// ----------------------------CAR----------------------------
 var carModels = [];
 async function loadCarModel() {
     try {
@@ -356,8 +356,71 @@ async function loadCarModel() {
 };
 
 loadCarModel();
-// ----------------------------BIKE----------------------------
+// ----------------------------CAR----------------------------
 
+// ----------------------------REWARD----------------------------
+
+var rewardObjects = [];
+
+async function arrowReward(X, Z) {
+    try {
+        const gltf = await loader.loadAsync("./model/reward/direction_arrow/scene.gltf");
+        const arrow = gltf.scene;
+        arrow.name = "arrow";
+        arrow.rotateY(-Math.PI/2);
+        arrow.position.set(X, 0.5, Z);
+        arrow.scale.set(0.9, 0.8, 0.9);
+        arrow.traverse(function (child){
+            if (child.isMesh) {
+                child.castShadow = true;
+            };
+        });
+        scene.add(arrow);
+        rewardObjects.push(arrow);
+    } catch (error) {   
+        console.log("Arrow Model Error:", error);
+    };
+};
+
+async function moneybagReward(X, Z) {
+    try {
+        const gltf = await loader.loadAsync("./model/reward/money_bag/scene.gltf");
+        const moneybag = gltf.scene;
+        moneybag.name = "moneybag";
+        moneybag.rotateY(-Math.PI/2);
+        moneybag.position.set(X, 0.7, Z);
+        moneybag.scale.set(0.0075, 0.01, 0.006);
+        moneybag.traverse(function (child){
+            if (child.isMesh) {
+                child.castShadow = true;
+            };
+        });
+        scene.add(moneybag);
+        rewardObjects.push(moneybag);
+    } catch (error) {   
+        console.log("Moneybag Model Error:", error);
+    };
+};
+
+function rewardGenerative() {
+    var randomNumber = Math.random();
+    if (randomNumber <= 0.4) {
+
+    } else 
+    {
+        var randomX = Math.floor(Math.random() * 21) - 10;
+        var randomZ = Math.floor(Math.random() * 31) - 12;
+        if (randomNumber <= 0.7) {
+            arrowReward(randomX, randomZ);
+        } else {
+            moneybagReward(randomX, randomZ);
+        };
+    };
+};
+
+rewardGenerative();
+
+// ----------------------------REWARD----------------------------
 
 // ----------------------------Animation----------------------------
 
@@ -386,16 +449,16 @@ const rightBounder = 39;
 const maxspeedThief = 0.4;
 var speedThief = maxspeedThief;
 
-const truckSpeed = 0.09;
+const truckSpeed = 0.1;
 var gradientTruckSpeed = 0;
 
-const motoSpeed = 0.08;
+const motoSpeed = 0.085;
 var gradientMotoSpeed = 0;
 
 const bikeSpeed = 0.075;
 var gradientBikeSpeed = 0;
 
-const carSpeed = 0.12;
+const carSpeed = 0.14;
 var gradientCarSpeed = 0;
 
 var turn = -1;
@@ -479,18 +542,19 @@ function updateVelocity(veloc) {
 // ---------------------- SỐ ĐỒ VẬT ĐANG GIỮ --------------------
 
 var generativeInterval, loadTruckModelInterval, loadMotoModelInterval, loadBikeModelInterval, 
-loadCarModelInterval, updateTruckSpeedInterval, updateBikeSpeedInterval, updateMotoSpeedInterval, updateCarSpeedInterval;
+loadCarModelInterval, updateTruckSpeedInterval, updateBikeSpeedInterval, updateMotoSpeedInterval, updateCarSpeedInterval, rewardGenerativeInterval;
 
 function updateInterval() {
-    generativeInterval = setInterval(generative, 18000);
-    loadTruckModelInterval = setInterval(loadTruckModel, 12000);
-    loadMotoModelInterval = setInterval(loadMotoModel, 10000);
-    loadBikeModelInterval = setInterval(loadBikeModel, 10000);
-    loadCarModelInterval = setInterval(loadCarModel, 13000);
-    updateTruckSpeedInterval = setInterval(updateTruckSpeed, 5000);
-    updateBikeSpeedInterval = setInterval(updateBikeSpeed, 5000);
-    updateMotoSpeedInterval = setInterval(updateMotoSpeed, 5000);
-    updateCarSpeedInterval = setInterval(updateCarSpeed, 5000);
+    generativeInterval = setInterval(generative, 20000);
+    loadTruckModelInterval = setInterval(loadTruckModel, 13000);
+    loadMotoModelInterval = setInterval(loadMotoModel, 11000);
+    loadBikeModelInterval = setInterval(loadBikeModel, 11000);
+    loadCarModelInterval = setInterval(loadCarModel, 14000);
+    updateTruckSpeedInterval = setInterval(updateTruckSpeed, 6000);
+    updateBikeSpeedInterval = setInterval(updateBikeSpeed, 6000);
+    updateMotoSpeedInterval = setInterval(updateMotoSpeed, 6000);
+    updateCarSpeedInterval = setInterval(updateCarSpeed, 6000);
+    rewardGenerativeInterval = setInterval(rewardGenerative, 12000);
 };
 
 function cancelInterval() {
@@ -503,6 +567,7 @@ function cancelInterval() {
     clearInterval(updateBikeSpeedInterval);
     clearInterval(updateMotoSpeedInterval);
     clearInterval(updateCarSpeedInterval);
+    clearInterval(rewardGenerativeInterval);
 };
 
 
@@ -510,6 +575,9 @@ var isStart = false;
 var isEnd = false;
 var collision = false;
 var remainingTime;
+
+var scoreParameter = 1;
+var deltaVelocity = 0;
 
 const clock = new THREE.Clock();
 
@@ -711,7 +779,22 @@ function animate() {
                 object.rotation.y += 0.05;
             };
         });
-        
+
+        rewardObjects.forEach(function (object) {
+            var objectBoundingBox = new THREE.Box3().setFromObject(object);
+            if (thiefBoundingBox.intersectsBox(objectBoundingBox)) {
+                if (object.name == "arrow") {
+                    deltaVelocity = turn/16;
+                    setTimeout(() => {
+                        deltaVelocity = 0
+                    }, 5000);
+                } else if (object.name == "moneybag") {
+                    scoreParameter = 2;
+                };
+                removeModel(object);
+            };
+        });
+
         if (thief && thief.position) {
             if (Math.abs(thief.position.x) <= 4.32 && thief.position.z >= 20 && thief.position.z <= 30) {
                 objectCollect.forEach(function (object) {
@@ -720,11 +803,11 @@ function animate() {
                     scene.remove(object);
                 });
                 objectCollect = [] ;
-                totalScore += itemScore;
+                totalScore += itemScore*scoreParameter;
                 itemScore = 0;
+                scoreParameter = 1;
             };
-
-            speedThief =  maxspeedThief - 0.07 * objectCollect.length;
+            speedThief =  maxspeedThief - 0.06 * objectCollect.length + deltaVelocity;
         };
     };
 };
