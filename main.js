@@ -404,13 +404,13 @@ async function moneybagReward(X, Z) {
 
 function rewardGenerative() {
     var randomNumber = Math.random();
-    if (randomNumber <= 0.4) {
+    if (randomNumber < 0.6) {
 
     } else 
     {
         var randomX = Math.floor(Math.random() * 21) - 10;
         var randomZ = Math.floor(Math.random() * 31) - 12;
-        if (randomNumber <= 0.7) {
+        if (randomNumber < 0.8) {
             arrowReward(randomX, randomZ);
         } else {
             moneybagReward(randomX, randomZ);
@@ -446,7 +446,7 @@ const keys = {
 const leftBounder = -42;
 const rightBounder = 39;
 
-const maxspeedThief = 0.4;
+const maxspeedThief = 0.36;
 var speedThief = maxspeedThief;
 
 const truckSpeed = 0.1;
@@ -469,6 +469,7 @@ var objectGenerative = [];
 
 var totalScore= 0;
 var itemScore = 0;
+const maxItems = 3;
 
 function generative() {
     for (var i = 0; i < 4; i++) {
@@ -545,15 +546,15 @@ var generativeInterval, loadTruckModelInterval, loadMotoModelInterval, loadBikeM
 loadCarModelInterval, updateTruckSpeedInterval, updateBikeSpeedInterval, updateMotoSpeedInterval, updateCarSpeedInterval, rewardGenerativeInterval;
 
 function updateInterval() {
-    generativeInterval = setInterval(generative, 20000);
+    generativeInterval = setInterval(generative, 21500);
     loadTruckModelInterval = setInterval(loadTruckModel, 13000);
     loadMotoModelInterval = setInterval(loadMotoModel, 11000);
     loadBikeModelInterval = setInterval(loadBikeModel, 11000);
-    loadCarModelInterval = setInterval(loadCarModel, 14000);
-    updateTruckSpeedInterval = setInterval(updateTruckSpeed, 6000);
-    updateBikeSpeedInterval = setInterval(updateBikeSpeed, 6000);
-    updateMotoSpeedInterval = setInterval(updateMotoSpeed, 6000);
-    updateCarSpeedInterval = setInterval(updateCarSpeed, 6000);
+    loadCarModelInterval = setInterval(loadCarModel, 13000);
+    updateTruckSpeedInterval = setInterval(updateTruckSpeed, 5000);
+    updateBikeSpeedInterval = setInterval(updateBikeSpeed, 5000);
+    updateMotoSpeedInterval = setInterval(updateMotoSpeed, 5000);
+    updateCarSpeedInterval = setInterval(updateCarSpeed, 5000);
     rewardGenerativeInterval = setInterval(rewardGenerative, 12000);
 };
 
@@ -751,7 +752,7 @@ function animate() {
         };
         
         if (keys.space.pressed) {
-            if (objectCollect.length < 3) {
+            if (objectCollect.length < maxItems) {
                 objectGenerative.forEach(function (object) {
                     var objectBoundingBox = new THREE.Box3().setFromObject(object);
                     if (thiefBoundingBox.intersectsBox(objectBoundingBox)) {
@@ -770,6 +771,14 @@ function animate() {
                         };
                     };
                 });
+            };
+            if (objectCollect.length > maxItems) {
+                for (let i = objectCollect.length-1; i >= maxItems; i--) {
+                    objectCollect[i].geometry.dispose();
+                    objectCollect[i].material.dispose();
+                    scene.remove(objectCollect[i]);
+                    objectCollect.splice(i, 1);
+                };
             };
         };
 
