@@ -446,16 +446,16 @@ const keys = {
 const leftBounder = -42;
 const rightBounder = 39;
 
-const maxspeedThief = 0.36;
+const maxspeedThief = 0.38;
 var speedThief = maxspeedThief;
 
-const truckSpeed = 0.1;
+const truckSpeed = 0.11;
 var gradientTruckSpeed = 0;
 
-const motoSpeed = 0.085;
+const motoSpeed = 0.09;
 var gradientMotoSpeed = 0;
 
-const bikeSpeed = 0.075;
+const bikeSpeed = 0.08;
 var gradientBikeSpeed = 0;
 
 const carSpeed = 0.14;
@@ -498,7 +498,7 @@ function generative() {
 generative();
 
 function updateTruckSpeed() {
-    gradientTruckSpeed += 0.009;
+    gradientTruckSpeed += 0.01;
 };
 
 function updateBikeSpeed() {
@@ -506,11 +506,11 @@ function updateBikeSpeed() {
 };
 
 function updateMotoSpeed() {
-    gradientMotoSpeed += 0.0085;
+    gradientMotoSpeed += 0.009;
 };
 
 function updateCarSpeed() {
-    gradientCarSpeed += 0.01;
+    gradientCarSpeed += 0.013;
 };
 
 // ---------------------- ĐIỂM SỐ --------------------
@@ -546,15 +546,15 @@ var generativeInterval, loadTruckModelInterval, loadMotoModelInterval, loadBikeM
 loadCarModelInterval, updateTruckSpeedInterval, updateBikeSpeedInterval, updateMotoSpeedInterval, updateCarSpeedInterval, rewardGenerativeInterval;
 
 function updateInterval() {
-    generativeInterval = setInterval(generative, 21500);
-    loadTruckModelInterval = setInterval(loadTruckModel, 13000);
-    loadMotoModelInterval = setInterval(loadMotoModel, 11000);
+    generativeInterval = setInterval(generative, 22500);
+    loadTruckModelInterval = setInterval(loadTruckModel, 14000);
+    loadMotoModelInterval = setInterval(loadMotoModel, 11500);
     loadBikeModelInterval = setInterval(loadBikeModel, 11000);
-    loadCarModelInterval = setInterval(loadCarModel, 13000);
-    updateTruckSpeedInterval = setInterval(updateTruckSpeed, 5000);
-    updateBikeSpeedInterval = setInterval(updateBikeSpeed, 5000);
-    updateMotoSpeedInterval = setInterval(updateMotoSpeed, 5000);
-    updateCarSpeedInterval = setInterval(updateCarSpeed, 5000);
+    loadCarModelInterval = setInterval(loadCarModel, 14000);
+    updateTruckSpeedInterval = setInterval(updateTruckSpeed, 5500);
+    updateBikeSpeedInterval = setInterval(updateBikeSpeed, 5500);
+    updateMotoSpeedInterval = setInterval(updateMotoSpeed, 5500);
+    updateCarSpeedInterval = setInterval(updateCarSpeed, 5500);
     rewardGenerativeInterval = setInterval(rewardGenerative, 12000);
 };
 
