@@ -12,7 +12,9 @@ const camera = new THREE.PerspectiveCamera(
     1000
 );
 
-camera.position.set(1.0009840837239776, 16.780185650706233, -30.192386071860483); 	 
+camera.position.set(0.12351028694110737
+    , 26.074752377445897, -24.885902896330663
+); 	 
 
 const renderer = new THREE.WebGLRenderer({
     alpha: true,
@@ -446,16 +448,16 @@ const keys = {
 const leftBounder = -42;
 const rightBounder = 39;
 
-const maxspeedThief = 0.38;
+const maxspeedThief = 0.4;
 var speedThief = maxspeedThief;
 
-const truckSpeed = 0.11;
+const truckSpeed = 0.12;
 var gradientTruckSpeed = 0;
 
-const motoSpeed = 0.09;
+const motoSpeed = 0.095;
 var gradientMotoSpeed = 0;
 
-const bikeSpeed = 0.08;
+const bikeSpeed = 0.085;
 var gradientBikeSpeed = 0;
 
 const carSpeed = 0.14;
@@ -546,15 +548,15 @@ var generativeInterval, loadTruckModelInterval, loadMotoModelInterval, loadBikeM
 loadCarModelInterval, updateTruckSpeedInterval, updateBikeSpeedInterval, updateMotoSpeedInterval, updateCarSpeedInterval, rewardGenerativeInterval;
 
 function updateInterval() {
-    generativeInterval = setInterval(generative, 22500);
-    loadTruckModelInterval = setInterval(loadTruckModel, 14000);
-    loadMotoModelInterval = setInterval(loadMotoModel, 11500);
-    loadBikeModelInterval = setInterval(loadBikeModel, 11000);
+    generativeInterval = setInterval(generative, 25000);
+    loadTruckModelInterval = setInterval(loadTruckModel, 15000);
+    loadMotoModelInterval = setInterval(loadMotoModel, 12500);
+    loadBikeModelInterval = setInterval(loadBikeModel, 12500);
     loadCarModelInterval = setInterval(loadCarModel, 14000);
-    updateTruckSpeedInterval = setInterval(updateTruckSpeed, 5500);
-    updateBikeSpeedInterval = setInterval(updateBikeSpeed, 5500);
-    updateMotoSpeedInterval = setInterval(updateMotoSpeed, 5500);
-    updateCarSpeedInterval = setInterval(updateCarSpeed, 5500);
+    updateTruckSpeedInterval = setInterval(updateTruckSpeed, 5000);
+    updateBikeSpeedInterval = setInterval(updateBikeSpeed, 5000);
+    updateMotoSpeedInterval = setInterval(updateMotoSpeed, 5000);
+    updateCarSpeedInterval = setInterval(updateCarSpeed, 5000);
     rewardGenerativeInterval = setInterval(rewardGenerative, 12000);
 };
 
@@ -597,7 +599,6 @@ function removeModel(model) {
 function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
-
     if (isStart) {
         if (remainingTime == 0) {
             timeoutMessage.textContent = "Time Over";
