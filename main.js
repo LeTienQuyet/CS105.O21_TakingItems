@@ -424,6 +424,37 @@ rewardGenerative();
 
 // ----------------------------REWARD----------------------------
 
+const audioListener = new THREE.AudioListener();
+camera.add(audioListener);
+
+const racingSound = new THREE.Audio(audioListener);
+scene.add(racingSound);
+
+const audioLoader = new THREE.AudioLoader();
+
+async function loadMusic() {
+    try {
+        const audioBuffer = await new Promise((resolve, reject) => {
+            audioLoader.load(
+              "./music/racing-125862.mp3",
+              (buffer) => resolve(buffer),
+              (xhr) => {
+                console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
+              },
+              (err) => {
+                reject(err);
+              }
+            );
+          });
+      
+          racingSound.setBuffer(audioBuffer);
+    } catch (error) {
+        console.log("Music Error:", error);
+    }
+}
+loadMusic();
+
+
 // ----------------------------Animation----------------------------
 
 // ----------------------------Animation----------------------------
@@ -600,6 +631,7 @@ function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
     if (isStart) {
+        racingSound.play();
         if (remainingTime == 0) {
             timeoutMessage.textContent = "Time Over";
             cancelAnimationFrame(requestAnimationFrame(animate));
