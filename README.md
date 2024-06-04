@@ -26,7 +26,7 @@ npm install
 ```
 * **Bước 4:** Chạy câu lệnh dưới đây sẽ xuất hiện đường dẫn của `localhost`. Nhấn vào đó để khởi động chương trình 
 ```
-npm vite
+npx vite
 ```
 ## Video demo 
 ### Nhấn vào hình ảnh dưới đây để xem video demo
