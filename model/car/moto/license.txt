@@ -1,11 +1,11 @@
 Model Information:
-* title:	Moto Vespa
-* source:	https://sketchfab.com/3d-models/moto-vespa-f1c7cacdbc954b48a4062a4734617afb
-* author:	mohamed ouartassi (https://sketchfab.com/medouartassi134)
+* title:	Low Poly Female Biker
+* source:	https://sketchfab.com/3d-models/low-poly-female-biker-a21466adce4b4165b07416ddbd568f00
+* author:	novusod (https://sketchfab.com/novusod)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Moto Vespa" (https://sketchfab.com/3d-models/moto-vespa-f1c7cacdbc954b48a4062a4734617afb) by mohamed ouartassi (https://sketchfab.com/medouartassi134) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Low Poly Female Biker" (https://sketchfab.com/3d-models/low-poly-female-biker-a21466adce4b4165b07416ddbd568f00) by novusod (https://sketchfab.com/novusod) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

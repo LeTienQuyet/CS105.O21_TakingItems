@@ -296,7 +296,7 @@ async function loadMotoModel() {
         const gltf = await loader.loadAsync("./model/car/moto/scene.gltf");
         const moto = gltf.scene;
         moto.position.set(36, 0.29, -3);
-        moto.rotateY(Math.PI/2);
+        moto.rotateY(-Math.PI/2);
         moto.scale.set(2, 2, 2);
         moto.traverse(function (child){
             if (child.isMesh) {
