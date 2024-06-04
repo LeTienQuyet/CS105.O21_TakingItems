@@ -29,5 +29,5 @@ npm install
 npm vite
 ```
 ## Video demo 
-* Nhấn vào hình ảnh dưới đây đễ xem video demo
+### Nhấn vào hình ảnh dưới đây để xem video demo
 [![Click here](https://raw.githubusercontent.com/LeTienQuyet/CS105.O21_TakingItems/main/startGame.png)](https://www.youtube.com/watch?v=B6Rd7vWrV8M)
