@@ -320,7 +320,8 @@ async function loadBikeModel() {
         const gltf = await loader.loadAsync("./model/car/bike/scene.gltf");
         const bike = gltf.scene;
         bike.position.set(-36, 0.5, -9.5);
-        bike.scale.set(0.02, 0.02, 0.02);
+        bike.rotateY(Math.PI/2);
+        bike.scale.set(1.5, 1.5, 1.5);
         bike.traverse(function (child){
             if (child.isMesh) {
                 child.castShadow = true;

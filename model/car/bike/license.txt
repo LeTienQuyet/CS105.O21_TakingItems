@@ -1,11 +1,11 @@
 Model Information:
-* title:	Bicycle
-* source:	https://sketchfab.com/3d-models/bicycle-4saPxqRTOLETE9TlL5iZkKd9zI1
-* author:	Klaas Nienhuis (https://sketchfab.com/klaasnienhuis)
+* title:	Jo on Bike – Rigged & Animated
+* source:	https://sketchfab.com/3d-models/jo-on-bike-rigged-animated-36ee5344e81149858a664cde9f98e835
+* author:	NEEEU Spaces GmbH (https://sketchfab.com/neeeu)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Bicycle" (https://sketchfab.com/3d-models/bicycle-4saPxqRTOLETE9TlL5iZkKd9zI1) by Klaas Nienhuis (https://sketchfab.com/klaasnienhuis) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Jo on Bike – Rigged & Animated" (https://sketchfab.com/3d-models/jo-on-bike-rigged-animated-36ee5344e81149858a664cde9f98e835) by NEEEU Spaces GmbH (https://sketchfab.com/neeeu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
