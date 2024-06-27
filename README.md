@@ -7,7 +7,7 @@
 
 <h1 align="center"><b>ĐỒ HOẠ MÁY TÍNH - CS105.O21</b></h>
 
-## GIỚI THIỆU MÔN HỌC
+## Giới thiệu môn học
 * **Môn học:** Đồ hoạ máy tính
 * **Mã lớp:** CS105.O21
 * **Giảng viên**: ThS. Cáp Phạm Đình Thăng
@@ -16,6 +16,11 @@
 |     Họ và tên     |    MSSV    |
 | :---------------: | :--------: |
 | Lê Tiến Quyết     | 21520428   |
+
+## Giới thiệu về đồ án cuối kỳ
+* Một trò chơi nhặt đồ được lấy ý tưởng từ mini game **Traffic Theft** của **Pummel Party**.
+* Những **món đồ khác nhau** cho cho **điểm số khác nhau**.
+* Người chơi cần nhặt sao cho **số điểm đạt được cao nhất** cho tới khi trò chơi kết thúc, ngoài ra người chơi cũng cần phải **né các phương tiện** trên đường để tránh xảy ra va chạm dẫn đến kết thúc trò chơi.
 
 ## Hướng dẫn chạy chương trình ##
 * **Bước 1:** Clone repository về máy 
@@ -37,6 +42,10 @@ npx vite
 ## Video demo 
 ### Nhấn vào hình ảnh dưới đây để xem video demo
 [![Click here](https://raw.githubusercontent.com/LeTienQuyet/CS105.O21_TakingItems/main/startGame.png)](https://youtu.be/R14uZxxd5gQ)
+
+## Tài nguyên sử dụng
+* **Các mô hình** sử dụng trong đồ án được lấy từ [**Sketchfab**](https://sketchfab.com/search?type=models) và [**Turbosquid**](https://www.turbosquid.com/).
+* Bên cạnh đó, **âm nhạc** sử dụng download tại [**pixabay**](https://pixabay.com/).
 
 <!-- Footer -->
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`Copyright © 2024 - Lê Tiến Quyết`
