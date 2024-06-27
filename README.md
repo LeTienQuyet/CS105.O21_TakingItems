@@ -5,7 +5,13 @@
   </a>
 </p>
 
-# ĐỒ HỌA MÁY TÍNH - CS105.O21 #
+<h1 align="center"><b>ĐỒ HOẠ MÁY TÍNH - CS105.O21</b></h>
+
+## GIỚI THIỆU MÔN HỌC
+* **Môn học:** Đồ hoạ máy tính
+* **Mã lớp:** CS105.O21
+* **Giảng viên**: ThS. Cáp Phạm Đình Thăng
+
 ## Thành viên nhóm: ##
 |     Họ và tên     |    MSSV    |
 | :---------------: | :--------: |
@@ -31,3 +37,6 @@ npx vite
 ## Video demo 
 ### Nhấn vào hình ảnh dưới đây để xem video demo
 [![Click here](https://raw.githubusercontent.com/LeTienQuyet/CS105.O21_TakingItems/main/startGame.png)](https://youtu.be/R14uZxxd5gQ)
+
+<!-- Footer -->
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`Copyright © 2024 - Lê Tiến Quyết`
