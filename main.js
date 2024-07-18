@@ -433,6 +433,7 @@ scene.add(racingSound);
 
 const audioLoader = new THREE.AudioLoader();
 
+
 async function loadMusic() {
     try {
         const audioBuffer = await new Promise((resolve, reject) => {
@@ -454,7 +455,6 @@ async function loadMusic() {
     }
 }
 loadMusic();
-
 
 // ----------------------------Animation----------------------------
 
