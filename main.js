@@ -881,12 +881,15 @@ function countdownTimer() {
 
 animate();
 
-var buttonElement = document.getElementById("startgame");
-buttonElement.addEventListener("click", function() {
+var stargame_buttonElement = document.getElementById("startgame_btn");
+var help_buttonElement = document.getElementById("help_btn");
+
+stargame_buttonElement.addEventListener("click", function() {
     countdownTimer();
-    buttonElement.style.display = "none";
+    stargame_buttonElement.style.display = "none";
     isStart = true;
     updateInterval();
+    help_buttonElement.style.display = "none";
 });
 
 window.addEventListener("keydown", (event) => {

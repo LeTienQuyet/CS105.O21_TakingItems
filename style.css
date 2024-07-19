@@ -60,11 +60,26 @@ html, body {
     justify-content: center;
 }
   
-button {
+#startgame_btn {
     position: absolute;
+    width: 155px;
+    height: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Monaco", monospace;
+    border-radius: 10px;
+}
+
+#help_btn {
+    position: absolute;
+    width: 155px;
+    height: 50px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
     padding: 10px 20px;
     font-size: 20px;
     font-family: "Monaco", monospace;
