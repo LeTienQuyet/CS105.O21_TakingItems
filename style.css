@@ -64,22 +64,35 @@ html, body {
     position: absolute;
     width: 155px;
     height: 50px;
-    top: 50%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     padding: 10px 20px;
     font-size: 20px;
     font-family: "Monaco", monospace;
     border-radius: 10px;
 }
 
+#setting_btn {
+    position: absolute;
+    width: 155px;
+    height: 50px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Monaco", monospace;
+    border-radius: 10px; 
+}
+
 #help_btn {
     position: absolute;
     width: 155px;
     height: 50px;
-    top: 60%;
+    top: 65%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -65%);
     padding: 10px 20px;
     font-size: 20px;
     font-family: "Monaco", monospace;

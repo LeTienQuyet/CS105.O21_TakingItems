@@ -882,6 +882,7 @@ function countdownTimer() {
 animate();
 
 var stargame_buttonElement = document.getElementById("startgame_btn");
+var setting_buttonElement = document.getElementById("setting_btn");
 var help_buttonElement = document.getElementById("help_btn");
 
 stargame_buttonElement.addEventListener("click", function() {
@@ -889,6 +890,7 @@ stargame_buttonElement.addEventListener("click", function() {
     stargame_buttonElement.style.display = "none";
     isStart = true;
     updateInterval();
+    setting_buttonElement.style.display = "none";
     help_buttonElement.style.display = "none";
 });
 
