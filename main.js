@@ -878,44 +878,49 @@ function countdownTimer() {
     };
 };
 
-
 animate();
+
+function displayElements(...elements) {
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "block";
+    };
+};
+
+function hideElements(...elements) {
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "none";
+    };
+};
 
 var startgame_buttonElement = document.getElementById("startgame_btn");
 var setting_buttonElement = document.getElementById("setting_btn");
 var help_buttonElement = document.getElementById("help_btn");
 var home_buttonElement = document.getElementById("home_btn");
 
-home_buttonElement.style.display = "none";
+var help_textElement = document.getElementById("help_text");
+
+hideElements(home_buttonElement, help_textElement);
 
 startgame_buttonElement.addEventListener("click", function() {
     countdownTimer();
-    startgame_buttonElement.style.display = "none";
     isStart = true;
     updateInterval();
-    setting_buttonElement.style.display = "none";
-    help_buttonElement.style.display = "none";
+    hideElements(startgame_buttonElement, setting_buttonElement, help_buttonElement);
 });
 
 setting_buttonElement.addEventListener("click", function() {
-    startgame_buttonElement.style.display = "none";
-    home_buttonElement.style.display = "block";
-    setting_buttonElement.style.display = "none";
-    help_buttonElement.style.display = "none";
+    hideElements(startgame_buttonElement, setting_buttonElement, help_buttonElement);
+    displayElements(home_buttonElement);
 });
 
 help_buttonElement.addEventListener("click", function() {
-    startgame_buttonElement.style.display = "none";
-    home_buttonElement.style.display = "block";
-    setting_buttonElement.style.display = "none";
-    help_buttonElement.style.display = "none";
+    hideElements(startgame_buttonElement, setting_buttonElement, help_buttonElement);
+    displayElements(home_buttonElement, help_textElement);
 });
 
 home_buttonElement.addEventListener("click", function() {
-    startgame_buttonElement.style.display = "block";
-    home_buttonElement.style.display = "none";
-    setting_buttonElement.style.display = "block";
-    help_buttonElement.style.display = "block";
+    hideElements(home_buttonElement, help_textElement);
+    displayElements(startgame_buttonElement, setting_buttonElement, help_buttonElement);
 });
 
 window.addEventListener("keydown", (event) => {

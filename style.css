@@ -12,7 +12,7 @@
 #countdown-timer {
     position: fixed;
     top: 10px;
-    left: 20px;
+    left: 10px;
     font-size: 26px;
     color: red;
     font-family: "Monaco", monospace;
@@ -110,4 +110,16 @@ html, body {
     font-size: 20px;
     font-family: "Monaco", monospace;
     border-radius: 10px; 
+}
+
+#help_text {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Monaco", monospace;
+    line-height: 1.5;
+    resize: none;
+    border-radius: 20px; 
 }
