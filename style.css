@@ -1,3 +1,13 @@
+#gamename_text {
+    position: absolute;
+    top: 4%;
+    left: 35%;
+    transform: translate(-4%, -35%);
+    font-size: 100px;
+    color: black;
+    font-weight: bolder;
+}
+
 #timeout-message {
     position: fixed;
     top: 50%;

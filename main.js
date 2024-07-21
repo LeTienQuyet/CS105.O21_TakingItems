@@ -896,8 +896,8 @@ var startgame_buttonElement = document.getElementById("startgame_btn");
 var setting_buttonElement = document.getElementById("setting_btn");
 var help_buttonElement = document.getElementById("help_btn");
 var home_buttonElement = document.getElementById("home_btn");
-
 var help_textElement = document.getElementById("help_text");
+var gamename_textElement = document.getElementById("gamename_text");
 
 hideElements(home_buttonElement, help_textElement);
 
@@ -905,7 +905,7 @@ startgame_buttonElement.addEventListener("click", function() {
     countdownTimer();
     isStart = true;
     updateInterval();
-    hideElements(startgame_buttonElement, setting_buttonElement, help_buttonElement);
+    hideElements(startgame_buttonElement, setting_buttonElement, help_buttonElement, gamename_textElement);
 });
 
 setting_buttonElement.addEventListener("click", function() {
