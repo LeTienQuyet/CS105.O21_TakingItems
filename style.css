@@ -136,3 +136,44 @@ html, body {
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.548);
 }
+
+.volume-control {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.volume-control label {
+    margin-right: 10px;
+}
+
+.volume-slider {
+    width: 200px;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.volume-slider:hover {
+    opacity: 1;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+}

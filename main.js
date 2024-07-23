@@ -433,7 +433,6 @@ scene.add(racingSound);
 
 const audioLoader = new THREE.AudioLoader();
 
-
 async function loadMusic() {
     try {
         const audioBuffer = await new Promise((resolve, reject) => {
@@ -448,7 +447,6 @@ async function loadMusic() {
               }
             );
           });
-      
           racingSound.setBuffer(audioBuffer);
     } catch (error) {
         console.log("Music Error:", error);
@@ -456,6 +454,13 @@ async function loadMusic() {
 }
 loadMusic();
 
+const volumeSlider = document.getElementById("volume-slider");
+
+function updateVolume() {
+    racingSound.setVolume(volumeSlider.value);
+};
+
+volumeSlider.addEventListener("input", updateVolume);
 // ----------------------------Animation----------------------------
 
 // ----------------------------Animation----------------------------
@@ -898,8 +903,9 @@ var help_buttonElement = document.getElementById("help_btn");
 var home_buttonElement = document.getElementById("home_btn");
 var help_textElement = document.getElementById("help_text");
 var gamename_textElement = document.getElementById("gamename_text");
+var volumecontrol_textElement = document.getElementById("volume_control");
 
-hideElements(home_buttonElement, help_textElement);
+hideElements(home_buttonElement, help_textElement, volumeSlider);
 
 startgame_buttonElement.addEventListener("click", function() {
     countdownTimer();
@@ -910,7 +916,7 @@ startgame_buttonElement.addEventListener("click", function() {
 
 setting_buttonElement.addEventListener("click", function() {
     hideElements(startgame_buttonElement, setting_buttonElement, help_buttonElement);
-    displayElements(home_buttonElement);
+    displayElements(home_buttonElement, volumeSlider);
 });
 
 help_buttonElement.addEventListener("click", function() {
