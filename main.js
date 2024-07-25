@@ -903,9 +903,10 @@ var help_buttonElement = document.getElementById("help_btn");
 var home_buttonElement = document.getElementById("home_btn");
 var help_textElement = document.getElementById("help_text");
 var gamename_textElement = document.getElementById("gamename_text");
-var volumecontrol_textElement = document.getElementById("volume_control");
+var volume_barElement = document.getElementById("volume-slider");
+var volume_textElement = document.getElementById("volume-label");
 
-hideElements(home_buttonElement, help_textElement, volumeSlider);
+hideElements(home_buttonElement, help_textElement, volumeSlider, volume_textElement);
 
 startgame_buttonElement.addEventListener("click", function() {
     countdownTimer();
@@ -916,7 +917,7 @@ startgame_buttonElement.addEventListener("click", function() {
 
 setting_buttonElement.addEventListener("click", function() {
     hideElements(startgame_buttonElement, setting_buttonElement, help_buttonElement);
-    displayElements(home_buttonElement, volumeSlider);
+    displayElements(home_buttonElement, volume_barElement, volume_textElement);
 });
 
 help_buttonElement.addEventListener("click", function() {
@@ -925,7 +926,7 @@ help_buttonElement.addEventListener("click", function() {
 });
 
 home_buttonElement.addEventListener("click", function() {
-    hideElements(home_buttonElement, help_textElement);
+    hideElements(home_buttonElement, help_textElement, volume_barElement, volume_textElement);
     displayElements(startgame_buttonElement, setting_buttonElement, help_buttonElement);
 });
 
